@@ -1,0 +1,33 @@
+
+# Basics
+alias ll='ls -lh'     # detailed and readable lists
+alias la='ls -A'      # lists everything but . and ..
+alias l='ls -CF'      # ordered and simple list
+alias ..='cd ..'      # goes up a directory
+alias ...='cd ../..'  # goes up two directories
+alias c='clear'       # clears shell
+alias h='history'     # evident
+
+
+# Git focused
+
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit -v'
+alias gcm='git commit -m'       # commit + message
+alias gca='git commit --amend'  # ammends last commit
+alias gp='git push'
+alias gpl='git pull'
+alias gco='git checkout'
+alias gb='git branch'
+alias gba='git branch -a'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gl='git log --oneline --graph --decorate --all'
+alias gst='git stash'
+alias gpop='git stash pop'
+
+# Useful
+
+alias md='mkdir -p'     # creates folders and subfolders
+alias mkcd='mkdir -p $1 && cd $1'  # creates folder and enters it
