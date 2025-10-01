@@ -1,0 +1,29 @@
+# Create folder and enter it
+
+# Crea una carpeta y entra en ella
+mkcd() {
+  if [ -z "$1" ]; then
+    echo "Debes indicar un nombre de carpeta"
+  else
+    mkdir -p "$1" && cd "$1"
+  fi
+}
+
+# Abre VS Code en el directorio actual
+vscode() {
+  code .
+}
+
+# As the title says. Resets changes with Git in a specific file
+git_reset_file() {
+  git checkout -- "$1"
+}
+
+# Search for specific text in the entire dir
+search() {
+  if [ -z "$1" ]; then
+    echo "Indicate what to search for"
+  else
+    grep -R "$1" .
+  fi
+}

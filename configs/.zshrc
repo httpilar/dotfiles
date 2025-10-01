@@ -106,7 +106,9 @@ export XDG_CONFIG_HOME=~/.config
   # Makes shell remember completion results and goes faster
   zstyle ':completion::complete:*' use-cache yes
 
-# Aliases go here
+# Personalized aliases and functions go here
+[[ -f ~/.config/dotfiles/functions/.functions ]] && source ~/.config/dotfiles/functions/.functions
+[[ -f ~/.config/dotfiles/configs/.aliases ]] && source ~/.config/dotfiles/configs/.aliases
 
 # Widgets go here
 
